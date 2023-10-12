@@ -1,0 +1,69 @@
+
+[
+    {
+      "name": "Casio 10G",
+      "img" : "https://i.ibb.co/t2m9JrH/watch-6853386-1280.jpg",
+      "price": 2099
+    },
+    {
+        "name": "adidas VPro",
+        "img" : "https://i.ibb.co/4MqCgGx/clock-8300238-1280.jpg",
+        "price": 3999
+      },
+      {
+        "name": "adidas V",
+        "img" : "https://i.ibb.co/93x9rYD/apple-2561475-1280.jpg",
+        "price": 2999
+      },
+      {
+        "name": "Samsung M2",
+        "img" : "https://i.ibb.co/6m71xJh/smart-watch-889639-1280.jpg",
+        "price": 1999
+      },
+      {
+        "name": "adidas",
+        "img" : "https://i.ibb.co/nCcvYBG/feet-1840619-1280.jpg",
+        "price": 650
+    },
+    {
+        "name": "Gambol",
+        "img" : "https://i.ibb.co/PhB3Gxd/shoes-1433925-1280.jpg",
+        "price": 700
+    },
+    {
+        "name": "Gim Shoes",
+        "img" : "https://i.ibb.co/W3rpDH9/dumbbells-2465478-1280.jpg",
+        "price": 499
+    },
+    {
+        "name": "Nike",
+        "img" : "https://i.ibb.co/VgQn07s/shoes-1897708-1280.jpg",
+        "price": 999
+    },
+    {
+        "name": "Samsung A13 Tab",
+        "img" : "https://i.ibb.co/tsZWZd7/black-4766996-1280.jpg",
+        "price": 2250
+      },
+      {
+        "name": "Iphone 8",
+        "img" : "https://i.ibb.co/wdzD672/iphone-762043-1280.jpg",
+        "price": 7999
+      },
+      {
+        "name": "Motorola",
+        "img" : "https://i.ibb.co/fXRn0jc/handphone-4759481-1280.jpg",
+        "price": 5000
+      },
+      {
+        "name": "Iphone 10",
+        "img" : "https://i.ibb.co/GH0scS8/iphone-3039062-1280.jpg",
+        "price": 9999
+      }
+      
+]
+
+
+
+
+

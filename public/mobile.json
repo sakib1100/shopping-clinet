@@ -1,0 +1,22 @@
+[
+      {
+        "name": "Samsung A13 Tab",
+        "img" : "https://i.ibb.co/tsZWZd7/black-4766996-1280.jpg",
+        "price": 2250
+      },
+      {
+        "name": "Iphone 8",
+        "img" : "https://i.ibb.co/wdzD672/iphone-762043-1280.jpg",
+        "price": 7999
+      },
+      {
+        "name": "Motorola",
+        "img" : "https://i.ibb.co/fXRn0jc/handphone-4759481-1280.jpg",
+        "price": 5000
+      },
+      {
+        "name": "Iphone 10",
+        "img" : "https://i.ibb.co/GH0scS8/iphone-3039062-1280.jpg",
+        "price": 9999
+      }
+]
