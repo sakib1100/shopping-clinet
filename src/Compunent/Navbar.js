@@ -13,7 +13,7 @@ const Navbar = () => {
 
   const [navOrder,setNavOrder] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/getData')
+        fetch('https://shopping-server-iota.vercel.app/getData')
         .then(res => res.json())
         .then(dbData => setNavOrder(dbData))
     })
