@@ -4,7 +4,7 @@ import Orders from './Orders';
 const Order = () => {
     const [dbUser,setDbUser] = useState([]);
     useEffect(() => {
-        fetch('https://new-shopping-server.vercel.app/getData')
+        fetch('http://localhost:5000/getData')
         .then(res => res.json())
         .then(dbData => setDbUser(dbData))
     },[])
@@ -14,7 +14,7 @@ const Order = () => {
         const proced = window.confirm('Are you sure you want to delete?');
         if(proced){
             console.log('data delete successfully',id)
-         const url = `https://new-shopping-server.vercel.app/deleteData/${id}`;
+         const url = `http://localhost:5000/deleteData/${id}`;
          fetch(url,{
             method: 'DELETE'
          })
