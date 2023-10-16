@@ -13,7 +13,7 @@ const AllProduct = ({data}) => {
 
   const handleAddToProduct = () => {
 
-    fetch('https://clean-city-server.vercel.app/post-data', {
+    fetch('https://new-shopping-server-jmmg.vercel.app/post-data', {
       method: 'POST',
       body: JSON.stringify({
    name,img,price
