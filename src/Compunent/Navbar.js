@@ -39,7 +39,7 @@ ppinG </div>
         <ul className="menu menu-horizontal gap-x-1">
 
           <li><NavLink to='/home'>Home</NavLink></li>   
-          <li><NavLink to='/about'>About</NavLink></li>
+          <li><NavLink to='/gellary'>Gellary</NavLink></li>
           <li><NavLink to='/order'>Order</NavLink></li>
           {
             user?<li className='bt-accent'><NavLink to="" onClick={logOut}>SignOut</NavLink></li>: <li><NavLink to='/login'>Login</NavLink></li>
@@ -62,7 +62,7 @@ ppinG </div>
     <label for="my-drawer-3" className="drawer-overlay"></label> 
     <ul className="menu p-4 w-80 min-h-full bg-base-200">
     <li><NavLink to='/home'>Home</NavLink></li>   
-          <li><NavLink to='/about'>About</NavLink></li>
+          <li><NavLink to='/gellary'>Gellary</NavLink></li>
           <li><NavLink to='/order'>Order</NavLink></li>
           {
             user?<li className='bt-accent'><NavLink to="" onClick={logOut}>SignOut</NavLink></li>: <li><NavLink to='/login'>Login</NavLink></li>

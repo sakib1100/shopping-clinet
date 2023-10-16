@@ -3,7 +3,7 @@ import { Outlet, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './Compunent/Navbar'
 import Home from './Pages/Home';
-import About from './Pages/About';
+import Gellary from './Pages/Gellary';
 import Order from './Pages/Order';
 import Product from './Pages/Product';
 import Clock from './Pages/Clock';
@@ -27,7 +27,7 @@ function App() {
    <Route path='/home' element={<Home />}></Route>
    <Route path='/product' element={<Product />}></Route>
    <Route path='/clock' element={<Clock />}></Route>
-    <Route path='/about' element={<About />}></Route>
+    <Route path='/gellary' element={<Gellary />}></Route>
     <Route path='/order' element={<RequireAuth>
       <Order ></Order>
     </RequireAuth>}></Route>
