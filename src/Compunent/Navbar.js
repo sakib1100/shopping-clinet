@@ -17,7 +17,7 @@ const Navbar = () => {
         fetch(url)
         .then(res => res.json())
         .then(dbData => setNavOrder(dbData))
-    })
+    },[])
 
     return (
         <div>
