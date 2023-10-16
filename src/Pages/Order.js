@@ -4,9 +4,10 @@ import Orders from './Orders';
 const Order = () => {
     const [dbUser,setDbUser] = useState([]);
     useEffect(() => {
-        fetch('https://new-shopping-server.vercel.app/getData')
-        .then(res => res.json())
-        .then(dbData => setDbUser(dbData))
+        const url = 'https://new-shopping-server.vercel.app/getData';
+        fetch(url)
+        .then((res) => res.json())
+        .then((dbData) => setDbUser(dbData))
     },[])
 
     const handleOnDelete = id => {

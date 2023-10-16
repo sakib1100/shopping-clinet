@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 const OrderBox = () => {
     const [navOrder,setNavOrder] = useState([]);
     useEffect(() => {
-        fetch('https://new-shopping-server.vercel.app/getData')
+      const url = 'https://new-shopping-server.vercel.app/getData';
+        fetch(url)
         .then(res => res.json())
         .then(dbData => setNavOrder(dbData))
     })
