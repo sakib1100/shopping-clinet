@@ -13,7 +13,7 @@ const AllProduct = ({data}) => {
 
   const handleAddToProduct = () => {
 
-    fetch('http://localhost:5000/post-data', {
+    fetch('https://new-shopping-server.vercel.app/post-data', {
       method: 'POST',
       body: JSON.stringify({
    name,img,price
