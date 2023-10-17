@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Orders = ({dbUsers,handleOnDelete}) => {
-    const {name,price,img,_id} = dbUsers
+    const {name,price,img,_id} = dbUsers;
     return (
         <div className=''>
 
