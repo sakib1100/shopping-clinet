@@ -6,10 +6,10 @@ import { toast } from 'react-toastify';
 
 const AllProduct = ({data}) => {
  
-  const {name,img,price} = data;
 
   const [user] = useAuthState(auth);
 
+    const {name,img,price} = data;
 
   const handleAddToProduct = () => {
 

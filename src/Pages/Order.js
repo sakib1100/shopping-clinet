@@ -8,7 +8,7 @@ const Order = () => {
         fetch(url)
         .then((res) => res.json())
         .then((dbData) => setDbUser(dbData))
-    });
+    },[])
 
     const handleOnDelete = id => {
        
