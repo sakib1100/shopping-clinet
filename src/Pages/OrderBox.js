@@ -8,7 +8,7 @@ const OrderBox = () => {
         fetch(url)
         .then(res => res.json())
         .then(dbData => setNavOrder(dbData))
-    })
+    },[])
     return (
         <div>
           <section class="text-gray-600 body-font">

@@ -8,10 +8,7 @@ const Product = () => {
     fetch('data.json')
   .then(res => res.json())
   .then(data => setProduct(data))
-  })
-
-
-
+  },[])
 
 
 

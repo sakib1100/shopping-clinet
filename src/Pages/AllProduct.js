@@ -6,10 +6,10 @@ import { toast } from 'react-toastify';
 
 const AllProduct = ({data}) => {
  
+  const {name,img,price} = data;
 
   const [user] = useAuthState(auth);
 
-    const {name,img,price} = data;
 
   const handleAddToProduct = () => {
 
@@ -18,7 +18,7 @@ const AllProduct = ({data}) => {
       body: JSON.stringify({
    name,img,price
 
-      },[]),
+      },),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
