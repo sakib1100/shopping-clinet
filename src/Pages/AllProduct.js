@@ -18,7 +18,7 @@ const AllProduct = ({data}) => {
       body: JSON.stringify({
    name,img,price
 
-      },),
+      }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
