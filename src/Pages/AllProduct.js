@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../firebase.init';
 import { toast } from 'react-toastify';
+import { OrderContext } from '../context/OrderContext';
 
 
 const AllProduct = ({data}) => {
- 
+  const {reload} = useContext(OrderContext);
 
   const [user] = useAuthState(auth);
 
@@ -24,7 +25,10 @@ const AllProduct = ({data}) => {
       },
     })
       .then((response) => response.json())
-      .then((json) => toast.success('Order Submited Successfully'));
+      .then((json) => {
+        toast.success('Order Submited Successfully')
+        reload();
+      });
   
      console.log('submiteed successfully')
   }

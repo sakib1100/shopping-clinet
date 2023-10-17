@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Orders from './Orders';
+import { OrderContext } from '../context/OrderContext';
 
 const Order = () => {
+    const {reload} = useContext(OrderContext);
+
     const [dbUser,setDbUser] = useState([]);
     useEffect(() => {
         const url = 'https://new-shopping-server.vercel.app/getData';
@@ -24,7 +27,7 @@ const Order = () => {
             if(data.deletedCount > 0){
                 const remain = dbUser.filter(user => user._id !== id);
                 setDbUser(remain);
-                
+                reload();
             }
          }
         )
