@@ -1,7 +1,6 @@
 import React from 'react';
 import "./style.css";
 import Banner from './Banner';
-import { NavLink, Outlet } from 'react-router-dom';
 import Review from './Review';
 import Product from './Product';
 import Footer from './Footer';
@@ -24,18 +23,6 @@ const Home = () => {
 </div>
 
 <Banner />
-
-{/* <div class="navbar bg-base-100">
-  <div class="navbar-center flex">
-    <ul class="menu menu-horizontal px-1">
-      <li><NavLink index to="/home/product" >AllProduct</NavLink></li>
-      <li><NavLink to="/home/shoes">Shoes</NavLink></li>
-      <li><NavLink to="/home/mobile">Mobile</NavLink></li>
-      <li><NavLink to="/home/clock">Clock</NavLink></li>
-    </ul>
-  </div>
- 
-</div> */}
 
 <Product />
 

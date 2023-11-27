@@ -5,9 +5,11 @@ const Banner = () => {
         <div>
 
 <div className='cards max-sm:mt-4'>
-    <h1 className='text-4xl max-sm:text-3xl  font-bold text-base-100'>20% Discount in 1st January </h1>
+    <h1 className='text-4xl  max-sm:text-2xl  font-bold text-base-100'>20% Discount This Month</h1><img className='ml-4' src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f973/512.gif" alt="🥳" width="60" height="60" />
 </div>
 
+<div>
+</div>
         </div>
     );
 };

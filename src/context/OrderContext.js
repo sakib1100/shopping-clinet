@@ -8,7 +8,7 @@ export default function OrderContextProvider({children}) {
     const [orders, setOrders] = useState(null);
 
     useEffect( () => {
-        getOrder()
+        getOrder();
        },[])
    
    const getOrder = async () => {
