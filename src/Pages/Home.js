@@ -8,8 +8,6 @@ import Footer from './Footer';
 const Home = () => {
     return (
 
-
-
 <div>
 <div class="hero lg:min-h-screen">
   <div class="hero-content flex-col lg:flex-row-reverse">

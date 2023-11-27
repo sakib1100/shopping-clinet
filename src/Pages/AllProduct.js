@@ -36,9 +36,6 @@ const AllProduct = ({data}) => {
 
 const alerts = () =>  toast.info("Pls Login for Order");
 
-// alert('LOGIN FIRST')
-
-
     return (
         <div className='mx-6 '>
 <div class="card w-60 h- glass">
