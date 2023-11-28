@@ -32,32 +32,32 @@ const handleOnSubmit = (event) => {
 
     return (
         <div>
-         <div class="hero mx-auto my-32">
+         <div className="hero mx-auto my-32">
    
 
-      <form onSubmit={handleOnSubmit} class="card-body w-80 max-w-sm rounded shadow-2xl bg-base-100">
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">Email</span>
+      <form onSubmit={handleOnSubmit} className="card-body w-80 max-w-sm rounded shadow-2xl bg-base-100">
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Email</span>
           </label>
-          <input name="email" type="email" placeholder="email" class="input input-bordered" required />
+          <input name="email" type="email" placeholder="email" className="input input-bordered" required />
         </div>
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">Password</span>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Password</span>
           </label>
-          <input name='password' type="password" placeholder="password" class="input input-bordered" required />
-          <label class="label">
-            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+          <input name='password' type="password" placeholder="password" className="input input-bordered" required />
+          <label className="label">
+            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>
         </div>
-        <div class="form-control mt-6">
-          <button class="btn text-base-200 hover-accent bg-neutral">Login</button>
+        <div className="form-control mt-6">
+          <button className="btn text-base-200 hover-accent bg-neutral">Login</button>
           <a className='mt-3'>Create account <Link className='text-primary' to="/signIn">Sign In</Link></a>
         </div>
-        <div class="divider">OR</div>
+        <div className="divider">OR</div>
 
-        <button  onClick={() => signInWithGoogle()} class="btn text-neutral hover-accent tx">Login With Google</button>
+        <button  onClick={() => signInWithGoogle()} className="btn text-neutral hover-accent tx">Login With Google</button>
 
       </form>
      

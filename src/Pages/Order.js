@@ -36,7 +36,7 @@ const Order = () => {
     return (
         <div className=''>
              <div className="mt-40 mb-20 text-center  ">
-      <h1 class="  sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Order Box</h1>
+      <h1 className="  sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Order Box</h1>
     
 
 <div className='grid lg:grid-cols-2 max-sm:grid-cols-1 sm:grid-cols-2'>
