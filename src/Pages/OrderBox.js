@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const OrderBox = () => {
-    const [navOrder,setNavOrder] = useState([]);
+    const [navOrder,setNavOrder] = useState('');
     useEffect(() => {
       const url = 'https://new-shopping-server.vercel.app/getData';
         fetch(url)
