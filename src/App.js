@@ -1,5 +1,5 @@
 
-import { Outlet, Route, Routes } from 'react-router-dom';
+import {  Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './Compunent/Navbar'
 import Home from './Pages/Home';
@@ -14,6 +14,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Modal from './Pages/Modal';
 import OrderBox from './Pages/OrderBox';
+import AllProduct from './Pages/AllProduct';
+import DiscountProduct from './Pages/DiscountProduct';
 function App() {
 
   return (
@@ -35,6 +37,8 @@ function App() {
     <Route path='/signIn' element={<SignIn />}></Route>
     <Route path='/modal' element={<Modal />}></Route>
     <Route path='/orderBox' element={<OrderBox />}></Route>
+    <Route path='/allProduct' element={<AllProduct />}></Route>
+    <Route path='/discountPd' element={<DiscountProduct />}></Route>
    </Routes>
    <ToastContainer />
 
