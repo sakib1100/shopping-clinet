@@ -1,6 +1,6 @@
 import React, { useContext} from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { auth } from '../firebase.init';
 import { signOut } from 'firebase/auth';
 import { OrderContext } from '../context/OrderContext';
@@ -19,8 +19,7 @@ const Navbar = () => {
   <div className="drawer-content flex flex-col">
 
     <div className="w-full navbar bg-base-300 fixed top-0 z-50">
-    <div className="flex-1 px-2 mx-2 text-2xl bold-xl">Sh<span className="loading loading-ring loading-md"></span>
-ppinG </div>
+    <div className="flex-1 px-2 mx-2 text-2xl bold-xl"><Link  to='/'>Sh<a  className="loading loading-ring loading-md"></a>ppinG </Link></div>
     
       <div className="flex-none lg:hidden">
      
