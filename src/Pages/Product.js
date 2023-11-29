@@ -18,7 +18,7 @@ const Product = () => {
     return (
       <div>
 
-<div className='flex justify-center w-100 g-7 mt-16'>
+<div className='flex justify-center w-100 g-7 '>
       <div className='grid lg:grid-cols-4 max-sm:grid-cols-1  sm:grid-cols-2 gap-10 my-10'>
       {
      product.map(data => <AllProduct

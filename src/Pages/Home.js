@@ -5,6 +5,7 @@ import Review from './Review';
 import Product from './Product';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
+import DiscountProduct from './DiscountProduct';
 
 const Home = () => {
     return (
@@ -21,8 +22,11 @@ const Home = () => {
   </div>
 </div>
 
+<DiscountProduct />
+
 <Banner />
 
+<div className='mt-10 lg:mt-16'><h1 className="lg:text-4xl text-3xl ml-3 font-bold lg:ml-9 font-mono">Our Products</h1></div>
 <Product />
 
 <Review />

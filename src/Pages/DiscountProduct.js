@@ -31,41 +31,83 @@ export default function DiscountProduct() {
   }, [])
 
   return (
-    <>
+    <div className="mb-24 max-sm:mt-7">
+    <h1 className="lg:text-4xl text-3xl ml-3 font-bold lg:ml-9 font-mono">Our New Collections</h1>
       {/*<!-- Component: Carousel with controls inside --> */}
       <div className="glide-01 relative w-full">
         {/*    <!-- Slides --> */}
         <div className="overflow-hidden" data-glide-el="track">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
             <li>
-              <img
-                src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-01.jpg"
-                className="m-auto max-h-full w-full max-w-full"
-              />
+      
+<div class="mx-auto mt-11 w-80 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg">
+  <img class="h-48 w-full object-cover object-center" src="https://i.ibb.co/T476P7c/OLVD9J0.jpg" alt="Product Image" />
+  <div class="p-4">
+    <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">SAMSUNG G4</h2>
+    <p class="mb-2 text-base dark:text-gray-300 text-gray-700">SMART COLLECTION THIS YEAR.</p>
+    <div class="flex items-center">
+      <p class="mr-2 text-lg font-semibold text-gray-900 dark:text-white">$40.00</p>
+      <p class="text-base  font-medium text-gray-500 line-through dark:text-gray-300">$25.00</p>
+      <p class="ml-auto text-base font-medium text-green-500">20% off</p>
+    </div>
+  </div>
+</div>
             </li>
             <li>
-              <img
-                src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-02.jpg"
-                className="m-auto max-h-full w-full max-w-full"
-              />
+<div class="mx-auto mt-11 w-80 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg">
+  <img class="h-48 w-full object-cover object-center" src="https://i.ibb.co/zSz028G/pexels-pixabay-258244.jpg" alt="Product Image" />
+  <div class="p-4">
+    <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">CLASSIQUE</h2>
+    <p class="mb-2 text-base dark:text-gray-300 text-gray-700">SMART COLLECTION THIS YEAR.</p>
+    <div class="flex items-center">
+      <p class="mr-2 text-lg font-semibold text-gray-900 dark:text-white">$10.00</p>
+      <p class="text-base  font-medium text-gray-500 line-through dark:text-gray-300">$25.00</p>
+      <p class="ml-auto text-base font-medium text-green-500">20% off</p>
+    </div>
+  </div>
+</div>
             </li>
             <li>
-              <img
-                src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-03.jpg"
-                className="m-auto max-h-full w-full max-w-full"
-              />
+<div class="mx-auto mt-11 w-80 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg">
+  <img class="h-48 w-full object-cover object-center" src="https://i.ibb.co/jfCgQDs/theregisti-TUBEp7-DPL9o-unsplash.jpg" alt="Product Image" />
+  <div class="p-4">
+    <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">AIRPODS PRO</h2>
+    <p class="mb-2 text-base dark:text-gray-300 text-gray-700">SMART COLLECTION THIS YEAR.</p>
+    <div class="flex items-center">
+      <p class="mr-2 text-lg font-semibold text-gray-900 dark:text-white">$27.00</p>
+      <p class="text-base  font-medium text-gray-500 line-through dark:text-gray-300">$25.00</p>
+      <p class="ml-auto text-base font-medium text-green-500">20% off</p>
+    </div>
+  </div>
+</div>
             </li>
             <li>
-              <img
-                src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-04.jpg"
-                className="m-auto max-h-full w-full max-w-full"
-              />
+<div class="mx-auto mt-11 w-80 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg">
+  <img class="h-48 w-full object-cover object-center" src="https://i.ibb.co/pPw93xj/levitating-music-headphones-display.jpg" alt="Product Image" />
+  <div class="p-4">
+    <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">HEADPHONE</h2>
+    <p class="mb-2 text-base dark:text-gray-300 text-gray-700">SMART COLLECTION THIS YEAR.</p>
+    <div class="flex items-center">
+      <p class="mr-2 text-lg font-semibold text-gray-900 dark:text-white">$31.00</p>
+      <p class="text-base  font-medium text-gray-500 line-through dark:text-gray-300">$25.00</p>
+      <p class="ml-auto text-base font-medium text-green-500">20% off</p>
+    </div>
+  </div>
+</div>
             </li>
             <li>
-              <img
-                src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-05.jpg"
-                className="m-auto max-h-full w-full max-w-full"
-              />
+<div class="mx-auto mt-11 w-80 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg">
+  <img class="h-48 w-full object-cover object-center" src="https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Product Image" />
+  <div class="p-4">
+    <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">SHOES</h2>
+    <p class="mb-2 text-base dark:text-gray-300 text-gray-700">SMART COLLECTION THIS YEAR.</p>
+    <div class="flex items-center">
+      <p class="mr-2 text-lg font-semibold text-gray-900 dark:text-white">$20.00</p>
+      <p class="text-base  font-medium text-gray-500 line-through dark:text-gray-300">$9.00</p>
+      <p class="ml-auto text-base font-medium text-green-500">5% off</p>
+    </div>
+  </div>
+</div>
             </li>
           </ul>
         </div>
@@ -121,6 +163,6 @@ export default function DiscountProduct() {
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
       {/*<!-- End Carousel with controls inside --> */}
-    </>
+    </div>
   )
 }
