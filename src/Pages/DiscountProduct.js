@@ -31,7 +31,7 @@ export default function DiscountProduct() {
   }, [])
 
   return (
-    <div className="mb-24 max-sm:mt-7">
+    <div className="mb-24 max-sm:mt-8">
     <h1 className="lg:text-4xl text-3xl ml-3 font-bold lg:ml-9 font-mono">Our New Collections</h1>
       {/*<!-- Component: Carousel with controls inside --> */}
       <div className="glide-01 relative w-full">
