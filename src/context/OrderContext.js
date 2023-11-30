@@ -12,7 +12,7 @@ export default function OrderContextProvider({children}) {
        },[])
    
    const getOrder = async () => {
-     fetch('https://new-shopping-server.vercel.app/getData')
+     fetch('https://new-shopping-server.onrender.com/getData')
      .then(res => res.json())
      .then(dbData =>  setOrders(dbData))
    }

@@ -14,7 +14,7 @@ const AllProduct = ({data}) => {
 
   const handleAddToProduct = () => {
 
-    fetch('https://new-shopping-server.vercel.app/post-data', {
+    fetch('https://new-shopping-server.onrender.com/post-data', {
       method: 'POST',
       body: JSON.stringify({
    name,img,price
