@@ -1,20 +1,24 @@
 [
     {
+        "id": 1,
         "name": "adidas",
         "img" : "https://i.ibb.co/nCcvYBG/feet-1840619-1280.jpg",
         "price": 650
     },
     {
+        "id": 2,
         "name": "Gambol",
         "img" : "https://i.ibb.co/PhB3Gxd/shoes-1433925-1280.jpg",
         "price": 700
     },
     {
+        "id": 3,
         "name": "Gim Shoes",
         "img" : "https://i.ibb.co/W3rpDH9/dumbbells-2465478-1280.jpg",
         "price": 499
     },
     {
+        "id": 4,
         "name": "Nike",
         "img" : "https://i.ibb.co/VgQn07s/shoes-1897708-1280.jpg",
         "price": 999

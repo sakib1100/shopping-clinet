@@ -7,7 +7,7 @@ const Footer = () => {
   <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
      
-    <div className="flex-1 px-2 mx-2 text-2xl bold-xl text-white">Sh<span className="loading loading-ring loading-md"></span>
+    <div className="flex-1 px-2 mx-2 text-2xl bold-xl text-whitend">Sh<span className="loading loading-ring loading-md"></span>
 ppinG </div>
     </a>
     <p className="text-sm text-base-200 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 CopyWrites —

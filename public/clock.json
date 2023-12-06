@@ -1,20 +1,24 @@
 [
     {
+      "id": 1,
       "name": "Casio 10G",
       "img" : "https://i.ibb.co/t2m9JrH/watch-6853386-1280.jpg",
       "price": 2099
     },
     {
+      "id": 2,
         "name": "adidas VPro",
         "img" : "https://i.ibb.co/4MqCgGx/clock-8300238-1280.jpg",
         "price": 3999
       },
       {
+        "id": 3,
         "name": "adidas V",
         "img" : "https://i.ibb.co/93x9rYD/apple-2561475-1280.jpg",
         "price": 2999
       },
       {
+        "id": 4,
         "name": "Samsung M2",
         "img" : "https://i.ibb.co/6m71xJh/smart-watch-889639-1280.jpg",
         "price": 1999
