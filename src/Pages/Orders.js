@@ -1,7 +1,7 @@
 import React from "react";
 
 const Orders = ({ dbUsers, handleOnDelete }) => {
-  const { name, prices, quantity, img, _id } = dbUsers;
+  const { name, prices, quantity, img, _id, email } = dbUsers;
   return (
     <div className="">
       <li className="flex flex-col py-6 sm:flex-row sm:justify-between">
@@ -19,9 +19,7 @@ const Orders = ({ dbUsers, handleOnDelete }) => {
               </div>
               <div className="text-right">
                 <p className=" text-3xl font-semibold">Tk {prices}</p>
-                <p className="text-sm line-through dark:text-gray-600">
-                  00.0 Tk
-                </p>
+                <p className="text-sm line-through dark:text-gray-600"></p>
               </div>
             </div>
             <div className="flex text-sm divide-x">
@@ -43,6 +41,7 @@ const Orders = ({ dbUsers, handleOnDelete }) => {
                 </svg>
                 <span className="text-error">Remove</span>
               </button>
+
               <button
                 type="button"
                 className="flex items-center px-2 py-1 space-x-1"

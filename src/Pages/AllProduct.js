@@ -19,11 +19,12 @@ const AllProduct = ({ data }) => {
   };
 
   const [user] = useAuthState(auth);
+  // const person = user.email;
 
   const { name, img, price } = data;
   const prices = price * count;
 
-  console.log("price", price * count);
+  // console.log("price", price * count);
 
   const handleOnClick = () => {
     fetch("https://new-online-shoppong-server.onrender.com/postData", {
@@ -33,6 +34,7 @@ const AllProduct = ({ data }) => {
         img,
         prices,
         quantity: count,
+        // email: person,
       }),
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -42,6 +44,9 @@ const AllProduct = ({ data }) => {
       .then((json) => {
         toast.success("Order Submited Successfully");
         reload();
+        const modal = document.querySelector(`[data-name="${name}"]`);
+
+        modal.remove();
       });
   };
 
@@ -107,14 +112,20 @@ const AllProduct = ({ data }) => {
                 </p>
                 <div className="flex justify-center items-center">
                   <div>
-                    <div class="join">
-                      <button onClick={decreaseNumber} class="join-item btn">
+                    <div className="join">
+                      <button
+                        onClick={decreaseNumber}
+                        className="join-item btn"
+                      >
                         -
                       </button>
-                      <button class="join-item mx-4">
+                      <button className="join-item mx-4">
                         <span>{count}</span>
                       </button>
-                      <button onClick={increaseNumber} class="join-item btn">
+                      <button
+                        onClick={increaseNumber}
+                        className="join-item btn"
+                      >
                         +
                       </button>
                     </div>
