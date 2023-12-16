@@ -9,7 +9,7 @@ export default function OrderContextProvider({ children }) {
   }, []);
 
   const getOrder = async () => {
-    fetch("http://localhost:5000/getData")
+    fetch("https://new-online-shoppong-server.onrender.com/getData")
       .then((res) => res.json())
       .then((dbData) => setOrders(dbData));
   };

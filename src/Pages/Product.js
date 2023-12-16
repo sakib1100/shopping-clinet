@@ -4,7 +4,7 @@ import AllProduct from "./AllProduct";
 const Product = () => {
   const [product, setProduct] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/getMainData")
+    fetch("https://new-online-shoppong-server.onrender.com/getMainData")
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);

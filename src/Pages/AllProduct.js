@@ -26,7 +26,7 @@ const AllProduct = ({ data }) => {
   console.log("price", price * count);
 
   const handleOnClick = () => {
-    fetch("http://localhost:5000/postData", {
+    fetch("https://new-online-shoppong-server.onrender.com/postData", {
       method: "POST",
       body: JSON.stringify({
         name,
