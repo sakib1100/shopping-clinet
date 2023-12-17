@@ -19,22 +19,21 @@ const AllProduct = ({ data }) => {
   };
 
   const [user] = useAuthState(auth);
-  // const person = user.email;
+  const person = user?.email;
 
-  const { name, img, price } = data;
+  const { name, img, price, _id } = data;
   const prices = price * count;
-
-  // console.log("price", price * count);
 
   const handleOnClick = () => {
     fetch("https://new-online-shoppong-server.onrender.com/postData", {
       method: "POST",
       body: JSON.stringify({
+        customerId: _id,
         name,
         img,
         prices,
         quantity: count,
-        // email: person,
+        email: person,
       }),
       headers: {
         "Content-type": "application/json; charset=UTF-8",

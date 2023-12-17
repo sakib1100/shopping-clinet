@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, NavLink } from "react-router-dom";
 import { auth } from "../firebase.init";
@@ -6,11 +6,22 @@ import { signOut } from "firebase/auth";
 import { OrderContext } from "../context/OrderContext";
 
 const Navbar = () => {
+  const { orders } = useContext(OrderContext);
+  const [dbUser, setDbUser] = useState([]);
   const [user] = useAuthState(auth);
+
+  useEffect(() => {
+    if (user) {
+      const url = `https://new-online-shoppong-server.onrender.com/getData?email=${user.email}`;
+      fetch(url)
+        .then((res) => res.json())
+        .then((dbData) => setDbUser(dbData));
+    }
+  }, [orders]);
+
   const logOut = () => {
     signOut(auth);
   };
-  const { orders } = useContext(OrderContext);
 
   return (
     <div>
@@ -82,7 +93,7 @@ const Navbar = () => {
                           />
                         </svg>
                         <span className="badge badge-sm indicator-item bg-success">
-                          {orders?.length}
+                          {dbUser?.length}
                         </span>
                       </div>
                     </label>
@@ -133,7 +144,7 @@ const Navbar = () => {
                       />
                     </svg>
                     <span className="badge badge-sm indicator-item bg-success">
-                      {orders?.length}
+                      {dbUser?.length}
                     </span>
                   </div>
                 </label>

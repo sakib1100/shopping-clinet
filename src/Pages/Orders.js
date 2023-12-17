@@ -1,9 +1,9 @@
 import React from "react";
 
 const Orders = ({ dbUsers, handleOnDelete }) => {
-  const { name, prices, quantity, img, _id, email } = dbUsers;
+  const { name, prices, quantity, img, _id } = dbUsers;
   return (
-    <div className="">
+    <div className="lg:dark:bg-gray-700 p-4 rounded-sm">
       <li className="flex flex-col py-6 sm:flex-row sm:justify-between">
         <div className="flex w-full space-x-2 sm:space-x-4">
           <img
@@ -18,7 +18,7 @@ const Orders = ({ dbUsers, handleOnDelete }) => {
                 <p className="text-sm dark:text-gray-400">Classic</p>
               </div>
               <div className="text-right">
-                <p className=" text-3xl font-semibold">Tk {prices}</p>
+                <p className=" lg:text-3xl  font-semibold">Tk {prices}</p>
                 <p className="text-sm line-through dark:text-gray-600"></p>
               </div>
             </div>
