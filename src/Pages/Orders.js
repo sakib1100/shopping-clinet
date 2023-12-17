@@ -46,7 +46,7 @@ const Orders = ({ dbUsers, handleOnDelete }) => {
                 type="button"
                 className="flex items-center px-2 py-1 space-x-1"
               >
-                <span>Quantity- {quantity}</span>
+                <span>Total Items- {quantity}</span>
               </button>
             </div>
           </div>
