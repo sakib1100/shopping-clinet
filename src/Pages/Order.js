@@ -4,6 +4,7 @@ import { OrderContext } from "../context/OrderContext";
 import Orders from "./Orders";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase.init";
+import axios, { Axios } from "axios";
 
 const Order = () => {
   const { reload } = useContext(OrderContext);
@@ -15,11 +16,20 @@ const Order = () => {
   console.log("main user is ", user.reloadUserInfo.photoUrl);
   useEffect(() => {
     if (user) {
-      const url = `https://new-online-shoppong-server.onrender.com/getData?email=${user.email}`;
-      fetch(url)
-        .then((res) => res.json())
-        .then((dbData) => setDbUser(dbData));
+      const fetchCode = async () => {
+        const res = await axios.get(
+          `https://new-online-shoppong-server.onrender.com/getData?email=${user.email}`
+        );
+        setDbUser(res.data);
+      };
+      fetchCode();
     }
+    // if (user) {
+    //   // const url = `https://new-online-shoppong-server.onrender.com/getData?email=${user.email}`;
+    //   // fetch(url)
+    //   //   .then((res) => res.json())
+    //   //   .then((dbData) => setDbUser(dbData));
+    // }
   }, [user]);
 
   const handleOnDelete = (id) => {
