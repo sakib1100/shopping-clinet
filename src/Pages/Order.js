@@ -4,7 +4,7 @@ import { OrderContext } from "../context/OrderContext";
 import Orders from "./Orders";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase.init";
-import axios, { Axios } from "axios";
+import axios from "axios";
 
 const Order = () => {
   const { reload } = useContext(OrderContext);
@@ -13,7 +13,7 @@ const Order = () => {
 
   const [user] = useAuthState(auth);
 
-  console.log("main user is ", user.reloadUserInfo.photoUrl);
+  // console.log("main user is ", user.reloadUserInfo.photoUrl);
   useEffect(() => {
     if (user) {
       const fetchCode = async () => {

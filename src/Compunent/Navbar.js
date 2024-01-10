@@ -6,7 +6,7 @@ import { signOut } from "firebase/auth";
 import { OrderContext } from "../context/OrderContext";
 
 const Navbar = () => {
-  const { orders } = useContext(OrderContext);
+  const { refresh } = useContext(OrderContext);
   const [dbUser, setDbUser] = useState([]);
   const [user] = useAuthState(auth);
 
@@ -17,7 +17,7 @@ const Navbar = () => {
         .then((res) => res.json())
         .then((dbData) => setDbUser(dbData));
     }
-  }, [orders]);
+  }, [refresh]);
 
   const logOut = () => {
     signOut(auth);
